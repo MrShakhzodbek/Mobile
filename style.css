@@ -55,7 +55,7 @@ body{
                     translateZ(10px);
     }
 }
-@media(max-width: 540px){
+@media(max-width: 480px){
     .container{
         border: 5px dotted grey;
 
