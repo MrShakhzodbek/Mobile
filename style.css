@@ -41,7 +41,7 @@ body{
         flex-wrap: wrap;
     }
    .item{
-        min-width: 400px;
+        max-width: 400px;
         margin-bottom: 20px;
         transition: 600ms;
     }
@@ -55,20 +55,22 @@ body{
                     translateZ(10px);
     }
 }
-@media(max-width: 360px){
+@media(max-width: 540px){
     .container{
         border: 5px dotted grey;
 
     }
     .item{
+        max-width: 350px;
         border: 4px double pink;
         border-radius: 20px;
         box-shadow: 5px 5px 25px red;
+        
 
     }
     .item:hover{
     background: greenyellow;
-    font-size: 25px;
+    font-size: 15px;
     color: black;
     animation: animate 1s ease-in;
     animation-iteration-count: infinite;
@@ -83,5 +85,11 @@ body{
         100%{
             transform: translateY(-5px)
         }
+    }
+    
+}
+@media(max-width: 320px){
+    .box{
+        opacity: 0;
     }
 }
